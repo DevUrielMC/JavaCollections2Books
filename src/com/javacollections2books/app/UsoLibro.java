@@ -15,9 +15,13 @@ public class UsoLibro {
 		if(libro1.equals(libro2))
 		{
 			System.out.println("Los libros son iguales");
-			
+			System.out.println(libro1.hashCode());				//Inplementamos el método HashCode para identificar especificamente 
+																//en que espacio de memoria está alojado el objeto
+			System.out.println(libro2.hashCode());
 		}else {
 			System.out.println("Los libros no son iguales");
+			System.out.println(libro1.hashCode());
+			System.out.println(libro2.hashCode());
 		}
 		
 	}
